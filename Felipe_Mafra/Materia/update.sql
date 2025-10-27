@@ -1,0 +1,86 @@
+/* UTILIZANDO O UPDATE PARA ATUALIZAR VALORES */
+
+SELECT NOME, EMAIL
+FROM CLIENTE;
+
++--------+---------------------+
+| NOME   | EMAIL               |
++--------+---------------------+
+| JOAO   | JOAO@GMAIL.COM      |
+| CELIA  | CELIA@GMAIL.COM     |
+| JORGE  | NULL                |
+| LILIAN | NULL                |
+| ANA    | ANA@GLOBO.COM       |
+| CARLA  | CARLA@TERATI.COM.BR |
++--------+---------------------+
+
+UPDATE CLIENTE
+SET EMAIL = 'LILIAN@HOTMAIL';
+
+SELECT NOME, EMAIL
+FROM CLIENTE;
+
++--------+--------------------+
+| NOME   | EMAIL              |
++--------+--------------------+
+| JOAO   | LILIAN@HOTMAIL.COM |
+| CELIA  | LILIAN@HOTMAIL.COM |
+| JORGE  | LILIAN@HOTMAIL.COM |
+| LILIAN | LILIAN@HOTMAIL.COM |
+| ANA    | LILIAN@HOTMAIL.COM |
+| CARLA  | LILIAN@HOTMAIL.COM |
++--------+--------------------+
+
+/* WHERE - VAI SER O SEU MELHOR AMIGO DA VIDA PRA VIDA INTEIRA */
+
+SELECT * FROM CLIENTE
+WHERE NOME = 'LILIAN';
+
+SELECT * FROM CLIENTE
+WHERE NOME = 'JOAO';
+
+UPDATE CLIENTE
+SET EMAIL = 'JOAO@GMAIL.COM'
+WHERE NOME = 'JOAO';
+
+SELECT * FROM CLIENTE
+WHERE NOME = 'CELIA';
+
+UPDATE CLIENTE
+SET EMAIL = 'CELIA@GMAIL.COM'
+WHERE NOME = 'CELIA';
+
+SELECT * FROM CLIENTE
+WHERE NOME = 'JORGE';
+
+UPDATE CLIENTE
+SET EMAIL = 'JORGE@GMAIL.COM'
+WHERE NOME = 'JORGE';
+
+SELECT * FROM CLIENTE
+WHERE NOME = 'ANA';
+
+UPDATE CLIENTE
+SET EMAIL = 'ANA@GLOBO.COM'
+WHERE NOME = 'ANA';
+
+SELECT * FROM CLIENTE
+WHERE NOME = 'CARLA';
+
+UPDATE CLIENTE
+SET EMAIL = 'CARLA@TERATI.COM'
+WHERE NOME = 'CARLA';
+
+SELECT NOME, EMAIL
+FROM CLIENTE;
+
++--------+--------------------+
+| NOME   | EMAIL              |
++--------+--------------------+
+| JOAO   | JOAO@GMAIL.COM     |
+| CELIA  | CELIA@GMAIL.COM    |
+| JORGE  | JORGE@GMAIL.COM    |
+| LILIAN | LILIAN@HOTMAIL.COM |
+| ANA    | ANA@GLOBO.COM      |
+| CARLA  | CARLA@TERATI.COM   |
++--------+--------------------+
