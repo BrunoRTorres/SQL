@@ -1,4 +1,4 @@
-UPDATE --?
+UPDATE --? Used to modify existing records in a database table
 
 UPDATE table_name
 SET column1 = value1,
