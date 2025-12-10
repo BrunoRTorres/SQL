@@ -1,4 +1,4 @@
-AND --? Used to combine multiple conditions, and both conditions must be true to display a value
+AND --? Used to combine multiple conditions, and both conditions must be TRUE to display a value
 
 -- Retrieve all customers who are from the USA and have a score greater than 500
 
