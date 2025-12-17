@@ -13,7 +13,7 @@ EXCEPT
 SELECT
 	FirstName,
 	LastName
-FROM sales.Customers
+FROM sales.Customers;
 
 Name	Surname
 Carol	Baker

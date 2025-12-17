@@ -11,7 +11,7 @@ UNION
 SELECT
 	FirstName,
 	LastName
-FROM sales.Employees
+FROM sales.Employees;
 
 Name	Surname
 Anna	Adams

@@ -15,7 +15,7 @@ UNION ALL
 SELECT
 	FirstName,
 	LastName
-FROM sales.Employees
+FROM sales.Employees;
 
 Name	Surname
 Jossef	Goldberg
