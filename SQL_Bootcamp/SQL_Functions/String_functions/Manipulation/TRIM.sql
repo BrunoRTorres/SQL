@@ -20,7 +20,7 @@ SELECT
     LEN(TRIM(first_name)) AS 'len_trim_name',
     LEN(first_name) - LEN(TRIM(first_name)) AS 'flag'
 FROM customers
-WHERE LEN(first_name) != LEN(TRIM(first_name))
+WHERE LEN(first_name) != LEN(TRIM(first_name));
 
 first_name  len_name    len_trim_name   flag
  John       5           4               1
