@@ -1,0 +1,1 @@
+--? Querying views is slower than querying CTAS tables
