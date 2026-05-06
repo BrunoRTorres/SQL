@@ -1,0 +1,2 @@
+--? Persisting the data marts of a DWH improves the speed
+--? of data retrieval compared to using views.
